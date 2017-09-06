@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tutorial1",
+    "map": "assets/data/levels/tut1.tmx",
+    "description": "Unlock the divergence point"
+  },
+  {
+    "id": "tutorial2",
+    "map": "assets/data/levels/tut2.tmx",
+    "description": "Close the rift to unveil the divergence point"
+  },
+  {
+    "id": "tutorial3",
+    "map": "assets/data/levels/tut3.tmx",
+    "description": "Avoid the birds"
+  },
+  {
+    "id": "tutorial4",
+    "map": "assets/data/levels/tut4.tmx",
+    "description": "Dandelions will alarm the birds"
+  },
+  {
+    "id": "tutorial5",
+    "map": "assets/data/levels/tut5.tmx",
+    "description": "Sometimes you just have to dodge"
+  },
+  {
+    "id": "tutorial6",
+    "map": "assets/data/levels/tut6.tmx",
+    "description": "Capture the rifts in any order"
+  },
+  {
+    "id": "tutorial7",
+    "map": "assets/data/levels/tut7.tmx",
+    "description": "Dragonflies will always follow you"
+  },
+  {
+    "id": "tutorial8",
+    "map": "assets/data/levels/tut8.tmx",
+    "description": "Good luck!"
+  },
+  {
+    "id": "level1",
+    "map": "assets/data/levels/lvl1.tmx",
+    "description": ""
+  },
+  {
+    "id": "level2",
+    "map": "assets/data/levels/lvl2.tmx",
+    "description": ""
+  },
+  {
+    "id": "level3",
+    "map": "assets/data/levels/lvl3.tmx",
+    "description": ""
+  },
+  {
+    "id": "recv",
+    "map": "assets/data/levels/jeff1.tmx",
+    "description": "recV"
+  }
+]

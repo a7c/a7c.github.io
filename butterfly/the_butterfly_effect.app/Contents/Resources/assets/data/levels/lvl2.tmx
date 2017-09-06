@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="50" tilewidth="64" tileheight="64" nextobjectid="351">
+ <tileset firstgid="1" name="terrain" tilewidth="64" tileheight="64" tilecount="108" columns="18">
+  <image source="../../images/tilesets/terrain.png" width="1152" height="384"/>
+ </tileset>
+ <tileset firstgid="109" name="block" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="../../images/images/block.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="110" name="checkpoint" tilewidth="200" tileheight="200" tilecount="59" columns="59">
+  <image source="../../images/images/checkpoint.png" width="11913" height="200"/>
+ </tileset>
+ <tileset firstgid="169" name="counter" tilewidth="250" tileheight="265" tilecount="1" columns="1">
+  <image source="../../images/images/counter.png" width="250" height="265"/>
+ </tileset>
+ <layer name="bg" width="60" height="50">
+  <properties>
+   <property name="tileset" value="terrain"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6Grf9OTsQ8krJqqqqqqqqqqqqqqqj4//t4LuQ==
+  </data>
+ </layer>
+ <objectgroup name="enemies">
+  <object id="263" type="moving" x="1984" y="512">
+   <polyline points="0,0 -384,0"/>
+  </object>
+  <object id="264" type="hound" x="1792" y="1088">
+   <properties>
+    <property name="triggerId" value="0"/>
+   </properties>
+   <polyline points="0,0 0,256"/>
+  </object>
+  <object id="267" type="hound" x="832" y="2688">
+   <polyline points="0,0 192,0"/>
+  </object>
+  <object id="271" type="hound" x="832" y="2048">
+   <properties>
+    <property name="triggerId" value="0"/>
+   </properties>
+   <polyline points="0,0 0,192"/>
+  </object>
+  <object id="274" type="bystander" x="704" y="1856">
+   <polyline points="0,0 -64,0"/>
+  </object>
+  <object id="275" type="bystander" x="768" y="1728">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="279" type="moving" x="512" y="1408">
+   <polyline points="0,0 320,0 320,256 0,256 0,0"/>
+  </object>
+  <object id="280" type="moving" x="512" y="1728">
+   <polyline points="0,0 320,0 320,256 0,256 0,0"/>
+  </object>
+  <object id="306" type="hound" x="1920" y="1600">
+   <properties>
+    <property name="triggerId" value="2"/>
+   </properties>
+   <polyline points="0,0 0,64"/>
+  </object>
+  <object id="308" type="moving" x="2048" y="640">
+   <polyline points="0,0 0,448"/>
+  </object>
+  <object id="309" type="moving" x="2112" y="1024">
+   <polyline points="0,0 0,-448"/>
+  </object>
+  <object id="310" type="moving" x="2176" y="512">
+   <polyline points="0,0 0,448"/>
+  </object>
+  <object id="311" type="bystander" x="2368" y="1088">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="312" type="bystander" x="2624" y="960">
+   <polyline points="0,0 0,-64"/>
+  </object>
+  <object id="313" type="moving" x="2496" y="832">
+   <polyline points="0,0 512,0"/>
+  </object>
+  <object id="314" type="moving" x="2240" y="1280">
+   <polyline points="0,0 0,448"/>
+  </object>
+  <object id="315" type="moving" x="2624" y="1280">
+   <polyline points="0,0 384,0 384,448 -64,448 -64,64"/>
+  </object>
+  <object id="316" type="bystander" x="2368" y="1792">
+   <polyline points="0,0 0,64"/>
+  </object>
+  <object id="317" type="moving" x="2112" y="1920">
+   <polyline points="0,0 896,0"/>
+  </object>
+  <object id="318" type="moving" x="3008" y="2112">
+   <polyline points="0,0 -512,0"/>
+  </object>
+  <object id="319" type="moving" x="2496" y="2304">
+   <polyline points="0,0 512,0"/>
+  </object>
+  <object id="320" type="bystander" x="2816" y="2496">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="321" type="moving" x="1920" y="2496">
+   <polyline points="0,0 768,0"/>
+  </object>
+  <object id="339" type="hound" x="1024" y="1600">
+   <properties>
+    <property name="triggerId" value="0"/>
+   </properties>
+   <polyline points="0,0 256,0"/>
+  </object>
+  <object id="340" type="hound" x="1280" y="2112">
+   <properties>
+    <property name="triggerId" value="0"/>
+   </properties>
+   <polyline points="0,0 256,0"/>
+  </object>
+  <object id="346" type="hound" x="1216" y="704">
+   <properties>
+    <property name="triggerId" value="1"/>
+   </properties>
+   <polyline points="0,0 0,64"/>
+  </object>
+  <object id="349" type="bystander" x="2880" y="1152">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="350" type="bystander" x="640" y="1536">
+   <polyline points="0,0 64,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="blocks">
+  <object id="90" gid="109" x="0" y="3200" width="3840" height="448">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="95" gid="109" x="0" y="448" width="3840" height="448">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="102" gid="109" x="0" y="2752" width="448" height="2304">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="103" gid="109" x="3392" y="2752" width="448" height="2304">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="198" gid="109" x="1664" y="1216" width="512" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="199" gid="109" x="2112" y="1664" width="64" height="448">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="200" gid="109" x="1664" y="1664" width="64" height="448">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="201" gid="109" x="1984" y="1664" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="202" gid="109" x="1664" y="1664" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="203" gid="109" x="1984" y="2048" width="64" height="384">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="204" gid="109" x="1792" y="2752" width="64" height="1088">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="208" gid="109" x="1472" y="1856" width="64" height="896">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="209" gid="109" x="1472" y="1856" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="210" gid="109" x="1472" y="1024" width="256" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="211" gid="109" x="1856" y="1152" width="128" height="512">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="213" gid="109" x="1280" y="1088" width="64" height="512">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="215" gid="109" x="1984" y="2048" width="448" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="216" gid="109" x="1856" y="2240" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="217" gid="109" x="1984" y="2432" width="832" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="218" gid="109" x="2368" y="2368" width="64" height="320">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="225" gid="109" x="1856" y="2752" width="1600" height="192">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="226" gid="109" x="1600" y="2624" width="64" height="768">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="228" gid="109" x="768" y="2624" width="832" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="229" gid="109" x="1088" y="1344" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="231" gid="109" x="896" y="1152" width="448" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="232" gid="109" x="896" y="2432" width="64" height="1280">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="233" gid="109" x="896" y="1536" width="448" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="234" gid="109" x="960" y="1920" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="235" gid="109" x="1088" y="1728" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="236" gid="109" x="1280" y="2048" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="237" gid="109" x="1280" y="1984" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="238" gid="109" x="1152" y="2240" width="448" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="239" gid="109" x="1088" y="2240" width="64" height="192">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="240" gid="109" x="960" y="2432" width="512" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="242" gid="109" x="384" y="1344" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="243" gid="109" x="384" y="2112" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="244" gid="109" x="384" y="3008" width="384" height="896">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="245" gid="109" x="448" y="1344" width="320" height="896">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="246" gid="109" x="704" y="960" width="448" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="247" gid="109" x="896" y="640" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="248" gid="109" x="1088" y="896" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="249" gid="109" x="896" y="768" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="250" gid="109" x="1664" y="768" width="64" height="192">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="251" gid="109" x="1472" y="640" width="64" height="192">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="262" gid="109" x="3072" y="2624" width="320" height="1024">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="265" gid="109" x="1344" y="832" width="512" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="281" gid="109" x="2240" y="960" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="282" gid="109" x="2368" y="832" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="283" gid="109" x="2432" y="768" width="1088" height="320">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="284" gid="109" x="2240" y="1216" width="64" height="192">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="285" gid="109" x="2368" y="1024" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="286" gid="109" x="2432" y="1024" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="287" gid="109" x="2496" y="960" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="288" gid="109" x="2496" y="1280" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="289" gid="109" x="2752" y="1088" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="290" gid="109" x="2304" y="1536" width="128" height="192">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="291" gid="109" x="2560" y="1216" width="128" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="292" gid="109" x="2624" y="1088" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="293" gid="109" x="2368" y="1216" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="294" gid="109" x="3072" y="1600" width="384" height="832">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="295" gid="109" x="2624" y="1664" width="320" height="320">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="296" gid="109" x="2688" y="960" width="320" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="297" gid="109" x="2304" y="1728" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="298" gid="109" x="2432" y="1856" width="640" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="299" gid="109" x="2048" y="1856" width="256" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="300" gid="109" x="2432" y="2048" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="301" gid="109" x="2880" y="2048" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="302" gid="109" x="2432" y="2240" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="303" gid="109" x="2688" y="2240" width="384" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="304" gid="109" x="2944" y="2432" width="128" height="64">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="other">
+  <object id="45" name="win" type="capture_win_sensor" x="1792" y="1280" width="256" height="256"/>
+  <object id="224" name="spawn" x="1280" y="2624" width="128" height="128"/>
+  <object id="337" type="trigger" x="1536" y="1600" width="128" height="64">
+   <properties>
+    <property name="triggerId" value="0"/>
+   </properties>
+  </object>
+  <object id="343" name="checkpoint" type="win_sensor" x="2176" y="448" width="256" height="256"/>
+  <object id="344" type="trigger" x="2240" y="2176" width="128" height="64">
+   <properties>
+    <property name="triggerId" value="2"/>
+   </properties>
+  </object>
+  <object id="345" type="trigger" x="768" y="1088" width="128" height="64">
+   <properties>
+    <property name="triggerId" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

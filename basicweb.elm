@@ -1,60 +1,138 @@
 import Markdown
-import Graphics.Element exposing (..)
-
-port title : String
-port title = "Molly Q Feldman"
+import Element exposing (..)
+--import Html exposing (text)
 
 main =
-    Markdown.toHtml markdown
+    Markdown.toHtml [] markdown
 
 markdown = """
 
-# Molly Q Feldman
+# Alan Cheng
 
 <div class="item" style="float: left" align="left" width=200px>
   <img  style=" margin-right: 2em" src="headshot.jpg" width=200px/>
-    <span class="caption"><a href="http://www.cs.cornell.edu/~molly/mollyfeldman_cv.pdf">CV</a></span>
+  <span class="caption"><a href="./alan_cheng_resume.pdf">Resume</a></span>
+  <span>ayc48 [at] cornell.edu</span>
 </div>
 
-I'm a second year PhD student in the Department of
-[Computer Science](http://www.cs.cornell.edu) at Cornell University where I have the privilege to work with [Erik Andersen](http://www.cs.cornell.edu/~eland/). I received my
-B.A. in Mathematics and Computer Science from [Swarthmore College](http://www.swarthmore.edu/)
-in May 2015.
+Hi! My name is Alan. I'm a senior at [Cornell University](http://www.cornell.edu) majoring in 
+[Computer Science](http://www.cs.cornell.edu), graduating in December 2017. I'm interested in software, game design,
+educational technology, language learning, and programming languages.
 
-##Research
-I research _educational technology_, focusing on how to provide better automated feedback
-for procedural disciplines, such as K-12 math and intro programming. As part of this work, we've built [CheckMark](checkmark.html) to automatically diagnose student misconceptions in K-12 math. We are currently exploring ways to bridge the automated vs. human feedback gap by using _human computation_ techniques
-in conjunction with CheckMark. I am also passionate about understanding how to better teach programming through _better language and tool design_.  I am grateful to work with [great collaborators](collaborators.html) on these projects!
+This page is still under construction, so please forgive any weirdness that may occur! 
 
-##News & Talks
-* I will be working with a Bronx AP CS class in 2017-2018 as a [Microsoft TEALS](https://www.tealsk12.org/) volunteer [June 17]
-* I was awarded an Outstanding Teaching Assistant Award for my work with Cornell's [intro CS course](http://www.cs.cornell.edu/courses/cs1110/2017sp/) [May 17]
-* I gave a talk entitled [Building Better Automated Feedback Solutions](http://cs.brown.edu/events/talks/feldman/) at Brown University [November 16]
-* I gave a 5-minute talk entitled [PL-Based Educational Technology](http://www.cs.cornell.edu/~jnfoster/tmp/wg28-lakeplacid/slides/molly.pdf) at Lake Placid [July 16]
+## Projects
 
-##Teaching
-* Head TA for [Introduction to Computing Using Python](http://www.cs.cornell.edu/courses/cs1110/), Cornell University, Profs. Lillian Lee and Erik Andersen [Spring 2017]
-* Head TA for [Foundations of Artificial Intelligence](http://www.cs.cornell.edu/courses/cs4700/2015fa/), Cornell University, Professor Bart Selman [Fall 2015]
-* Numerous classes at Swarthmore College: Introduction to Computer Science,
-Data Structures and Algorithms, Linear Algebra, Honors Multivariable Calculus
+Check out [my projects page](./projects.html) for more info on these projects!
 
-##Outreach
-* I work with math Professor [Bob Strichartz](http://www.math.cornell.edu/m/People/bynetid/rss24) teaching 2nd - 6th grade math students in the Ithaca area
-* I taught programming as a [GRASSHOPR](https://sites.google.com/site/grasshopratcornell/home/) fellow with [Geoff Pleiss](http://geoffpleiss.com/) at Trumansburg Middle School 
-* I volunteered with the American Association of University Women for their [TECH Savvy](http://cortland-ny.aauw.net/tech-savvy/) workshop 
-* For the past two years, I have taught [Scratch](http://www.scratch.mit.edu) to 7th and 8th grade girls at Cornell's [Expanding your Horizons](https://www.eyh.cornell.edu/) conference 
+<div style="margin-left:250px">
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/s&s_cover_photo.png" height=200px/>
+    <span><b>Squeak & Swipe</b></span>
+  </div>
 
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/dispossessed_cover_photo.png" height=200px/>
+    <span><b>Dispossessed</b></span>
+  </div>
 
-##Departmental Service
-* I co-coordinate Cornell's [Programming Languages Discussion Group](http://www.cs.cornell.edu/Courses/cs7190)
-* I help our visiting speakers make sure their [colloquium](https://www.cs.cornell.edu/events/colloquium) talks have minimal technical failure
-* I coordinated [Cornell CS PhD Visit Day](http://www.cs.cornell.edu/projects/phdvisit/) in 2016
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/butterfly_effect_icon.png" height=200px/>
+    <span><b>The Butterfly Effect</b></span>
+  </div>
 
-##Contact
-You can reach me at molly near cs.cornell.edu or [@feldmanmolly](https://twitter.com/feldmanmolly).
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/crystallize_screenshot.png" height=200px/>
+    <span><b>Crystallize</b></span>
+  </div>
+
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/commander_screenshot.png" height=200px/>
+    <span><b>Commander</b></span>
+  </div>
+</div>
+
+---
+
+## Teaching
+
+As of Fall 2017, I'm serving as a teaching assistant for [CS 3110 (Functional Programming and Data
+Structures)](http://www.cs.cornell.edu/courses/cs3110/2017fa/).
+
+In the past, I've been a TA for the following courses:
+* CS 3152 (Introduction to Computer Game Architecture) 
+[[sp16]](http://www.cs.cornell.edu/courses/cs3152/2016sp/)
+* CS 3110 (Functional Programming and Data Structures) 
+[[fa15]](http://www.cs.cornell.edu/courses/cs3110/2015fa/)
+[[sp15]](http://www.cs.cornell.edu/courses/cs3110/2015sp/)
+[[fa14]](http://www.cs.cornell.edu/courses/cs3110/2014fa/)
+* CS 2110 (Object-Oriented Programming and Data Structures)
+[[sp14]](http://www.cs.cornell.edu/courses/cs2110/2014sp/)
+
+Throughout my time as a TA for CS 3110, I worked with 
+[Prof. Michael Clarkson](http://www.cs.cornell.edu/~clarkson/) to develop two new assignments
+for the course: a text-adventure game and a Pokemon simulator and bot. I also coded sample
+solutions for these assignments, with assistance from other TAs. 
+
+<div style="margin-left:250px">
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/gates_adventure_screenshot.png" height=200px/>
+    <span><b>Adventure<br>(fa17, fa16, fa15)</b><br>
+      [[writeup]](http://www.cs.cornell.edu/courses/cs3110/2016fa/a2/a2.html)<br>
+      [[gates hall adventure]](http://www.cs.cornell.edu/courses/cs3110/2016fa/a2/gates.json)</span>
+  </div>
+
+  <div class="item" style="margin-right:50px; margin-bottom: 30px" align="left" width=200px>
+    <img src="./img/ps6_screenshot.jpg" height=200px/>
+    <span><b>PokeJouki Emerald<br>(fa14)</b><br>
+      [[writeup]](http://www.cs.cornell.edu/courses/cs3110/2014fa/hw/6/ps6.pdf)</span>
+  </div>
+</div>
+
+---
+
+## Japanese
+
+During the 2016-17 academic year, I studied abroad at the 
+[Kyoto Consortium for Japanese Studies](http://www.kcjs.jp/index.html). While in Japan, I
+spent my mornings in intensive Japanese language courses; my afternoons learning about heritage,
+artisans, and manga; my evenings with a wonderful host family; and the rest of my free time 
+studying or exploring Kyoto and its outskirts.
+
+In May 2017, I was given the opportunity to do a one-month translation internship at 
+[Sojitz Corporation](https://www.sojitz.com/en/), a general trading company located 
+in Tokyo, Japan.
+
+Shortly before leaving Japan, I passed the 
+[Kanji Kentei Level Pre-2](https://en.wikipedia.org/wiki/Kanji_kentei#Level_Pre-2).
+
+Nowadays, I continue to study Japanese in my free time. Occasionally I attempt to do some
+writing in Japanese, despite having no talent for creative writing whatsoever (a big thank you to 
+[Nishimata-sensei](http://www.kcjs.jp/about/faculty_staff.html#language_instructors) for
+editing these):
+* [&#20845;&#26085;&#12398;&#33750;&#33970; (Muika no Ayame)](./japanese/&#20845;&#26085;&#12398;&#33750;&#33970;.pdf):
+the story of a woman who's always late
+* [&#20116;&#26376;&#38632;&#12398;&#30165; (Samidare no Ato)](./japanese/&#20116;&#26376;&#38632;&#12398;&#30165;.pdf):
+a short tale of love, rain, and reflection
+
+---
+
+## Miscellaneous
+
+I like singing! This year, I am humbled to be singing as a Tenor 1 with the talented men of the 
+[Cornell Glee Club](http://www.gleeclub.com/). In previous semesters (starting Fall 2013), 
+I sang in the [Cornell Chorale](https://www.cornellchorale.com/). I'm also down to sing karaoke
+whenever.
+
+I also enjoy playing video games (if you hadn't guessed by this point). Lately, I have been
+playing [Persona 5](http://atlus.com/persona5/), 
+[Fire Emblem Heroes](https://fire-emblem-heroes.com/en/), 
+[Super Smash Bros. for Wii U](http://www.smashbros.com/us/) and 
+[League of Legends](https://play.na.leagueoflegends.com/en_US).
 
 <div class="footer" margin-left=250px>
   <footer  font-size=10px>
+    Original layout borrowed (with permission!) from [molly](http://www.cs.cornell.edu/~molly/);
     CSS adapted from [minimal](https://github.com/orderedlist/minimal); everything else built using [elm](http://elm-lang.org)
     </footer>
 </div>

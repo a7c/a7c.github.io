@@ -1,0 +1,107 @@
+[
+  {
+    "id": "tutorial1",
+    "map": "assets/data/levels/tut1.tmx",
+    "description": "Unlock the divergence point"
+  },
+  {
+    "id": "tutorial2",
+    "map": "assets/data/levels/tut2.tmx",
+    "description": "Close the rift to unveil the divergence point"
+  },
+  {
+    "id": "tutorial3",
+    "map": "assets/data/levels/tut3.tmx",
+    "description": "Birds try to restore order by eliminating you"
+  },
+  {
+    "id": "tutorial_post_3",
+    "map": "assets/data/levels/tut_aggro.tmx",
+    "description": "Just touching the divergence point will upset them"
+  },
+  {
+    "id": "tutorial_pre_4",
+    "map": "assets/data/levels/tut_dandelion.tmx",
+    "description": "Scatter dandelions to spread seeds of chaos"
+  },
+  {
+    "id": "tutorial4",
+    "map": "assets/data/levels/tut4.tmx",
+    "description": "But scatting dandelions will alert nearby enemies"
+  },
+  {
+    "id": "tutorial5",
+    "map": "assets/data/levels/tut5.tmx",
+    "description": "It's your choice: scatter or avoid?"
+  },
+  {
+    "id": "tutorial6",
+    "map": "assets/data/levels/tut6.tmx",
+    "description": "Capture the rifts in any order"
+  },
+  {
+    "id": "tutorial7",
+    "map": "assets/data/levels/tut7.tmx",
+    "description": "Dragonflies will pursue you constantly"
+  },
+  {
+    "id": "tutorial8",
+    "map": "assets/data/levels/tut8.tmx",
+    "description": "Good luck..."
+  },
+  {
+    "id": "level1",
+    "map": "assets/data/levels/lvl1.tmx",
+    "description": ""
+  },
+  {
+    "id": "tunnels",
+    "map": "assets/data/levels/tunnels.tmx",
+    "description": ""
+  },
+  {
+    "id": "level2",
+    "map": "assets/data/levels/lvl2.tmx",
+    "description": ""
+  },
+  {
+    "id": "ambushes",
+    "map": "assets/data/levels/ambushes.tmx",
+    "description": ""
+  },
+  {
+    "id": "level3",
+    "map": "assets/data/levels/lvl3.tmx",
+    "description": ""
+  },
+  {
+    "id": "tut_fun_block",
+    "map": "assets/data/levels/tut_fun_block.tmx",
+    "description": "What are those green walls?"
+  },
+  {
+    "id": "revolve",
+    "map": "assets/data/levels/revolve.tmx",
+    "description": ""
+  },
+  {
+    "id": "prison_break",
+    "map": "assets/data/levels/new_jeff3.tmx",
+    "description": ""
+  },
+  {
+    "id": "green_grid",
+    "map": "assets/data/levels/green_grid.tmx",
+    "description": ""
+  },
+  {
+    "id": "spawner",
+    "map": "assets/data/levels/spawner.tmx",
+    "description": "There may be more birds here than meets the eye..."
+  },
+  {
+    "id": "green_spiral",
+    "map": "assets/data/levels/new_jeff2.tmx",
+    "description": ""
+  }
+]

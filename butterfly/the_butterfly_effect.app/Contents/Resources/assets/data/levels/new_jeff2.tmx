@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="64" tileheight="64" nextobjectid="422">
+ <tileset firstgid="1" name="terrain" tilewidth="64" tileheight="64" tilecount="108" columns="18">
+  <image source="../../images/tilesets/terrain.png" width="1152" height="384"/>
+ </tileset>
+ <tileset firstgid="109" name="block" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="../../images/images/block.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="110" name="checkpoint" tilewidth="200" tileheight="200" tilecount="59" columns="59">
+  <image source="../../images/images/checkpoint.png" width="11913" height="200"/>
+ </tileset>
+ <tileset firstgid="169" name="counter" tilewidth="250" tileheight="265" tilecount="1" columns="1">
+  <image source="../../images/images/counter.png" width="250" height="265"/>
+ </tileset>
+ <tileset firstgid="170" name="block_turquoise" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="../../images/images/block_turquoise.png" width="64" height="64"/>
+ </tileset>
+ <layer name="bg" width="40" height="40">
+  <properties>
+   <property name="tileset" value="terrain"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKH7/qXXYyi4aqqqqqqqqo8eShIGQQ==
+  </data>
+ </layer>
+ <objectgroup name="blocks">
+  <object id="90" gid="109" x="0" y="2560" width="2560" height="448">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="95" gid="109" x="0" y="448" width="2560" height="448">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="102" gid="109" x="0" y="768" width="448" height="320">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="104" gid="109" x="0" y="2112" width="448" height="1344">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="114" gid="109" x="2112" y="2112" width="448" height="1664">
+   <properties>
+    <property name="tileset" value="block"/>
+   </properties>
+  </object>
+  <object id="315" type="enemy_pass" gid="170" x="1280" y="1216" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="323" type="enemy_pass" gid="170" x="1216" y="1280" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="326" type="enemy_pass" gid="170" x="1152" y="1216" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="328" type="enemy_pass" gid="170" x="1216" y="1088" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="329" type="enemy_pass" gid="170" x="1280" y="1024" width="128" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="330" type="enemy_pass" gid="170" x="1408" y="1088" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="331" type="enemy_pass" gid="170" x="1472" y="1152" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="332" type="enemy_pass" gid="170" x="1472" y="1216" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="335" type="enemy_pass" gid="170" x="1472" y="1280" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="336" type="enemy_pass" gid="170" x="1408" y="1344" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="337" type="enemy_pass" gid="170" x="1344" y="1408" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="338" type="enemy_pass" gid="170" x="1152" y="1472" width="192" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="340" type="enemy_pass" gid="170" x="1088" y="1408" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="341" type="enemy_pass" gid="170" x="1024" y="1344" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="342" type="enemy_pass" gid="170" x="960" y="1280" width="64" height="256">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="343" type="enemy_pass" gid="170" x="1024" y="1024" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="344" type="enemy_pass" gid="170" x="1088" y="960" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="346" type="enemy_pass" gid="170" x="1152" y="832" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="348" type="enemy_pass" gid="170" x="1216" y="768" width="256" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="349" type="enemy_pass" gid="170" x="1472" y="832" width="128" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="350" type="enemy_pass" gid="170" x="1600" y="896" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="351" type="enemy_pass" gid="170" x="1664" y="1024" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="352" type="enemy_pass" gid="170" x="1728" y="1344" width="64" height="320">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="356" type="enemy_pass" gid="170" x="1664" y="1472" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="358" type="enemy_pass" gid="170" x="1600" y="1600" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="359" type="enemy_pass" gid="170" x="1536" y="1664" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="360" type="enemy_pass" gid="170" x="1472" y="1728" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="362" type="enemy_pass" gid="170" x="1024" y="1792" width="448" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="363" type="enemy_pass" gid="170" x="896" y="1728" width="128" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="364" type="enemy_pass" gid="170" x="832" y="1664" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="365" type="enemy_pass" gid="170" x="768" y="1600" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="366" type="enemy_pass" gid="170" x="640" y="1472" width="64" height="128">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="367" type="enemy_pass" gid="170" x="704" y="1536" width="64" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+  <object id="421" type="enemy_pass" gid="170" x="1792" y="1344" width="320" height="64">
+   <properties>
+    <property name="tileset" value="block_turquoise"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="enemies">
+  <object id="122" type="bystander" x="512" y="896">
+   <polyline points="128,128 192,128"/>
+  </object>
+  <object id="123" type="bystander" x="896" y="512">
+   <polyline points="128,128 192,128"/>
+  </object>
+  <object id="130" type="moving" x="1322.67" y="1322.67">
+   <polyline points="149.333,149.333 -298.667,149.333 -298.667,-298.667 149.333,-298.667 149.333,149.333"/>
+  </object>
+  <object id="131" type="moving" x="1280" y="512">
+   <polyline points="128,128 128,512 -256,512 -256,128 128,128"/>
+  </object>
+  <object id="145" type="hound" x="1280" y="1024">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="0"/>
+   </properties>
+   <polyline points="128,128 128,192"/>
+  </object>
+  <object id="146" type="hound" x="1344" y="832">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="0"/>
+   </properties>
+   <polyline points="128,128 128,64"/>
+  </object>
+  <object id="147" type="hound" x="1984" y="576">
+   <properties>
+    <property name="triggerId" value="1"/>
+   </properties>
+   <polyline points="0,0 0,64"/>
+  </object>
+  <object id="149" type="hound" x="576" y="1984">
+   <properties>
+    <property name="triggerId" value="1"/>
+   </properties>
+   <polyline points="0,0 0,64"/>
+  </object>
+  <object id="154" type="moving" x="2048" y="1536">
+   <polyline points="0,0 -256,0"/>
+  </object>
+  <object id="173" type="moving" x="512" y="896">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="1"/>
+   </properties>
+   <polyline points="128,128 128,512 512,512 512,128 128,128"/>
+  </object>
+  <object id="174" type="moving" x="508.84" y="508.84">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="1"/>
+   </properties>
+   <polyline points="128.79,128.79 128.79,515.16 515.16,515.16 515.16,128.79 128.79,128.79"/>
+  </object>
+  <object id="187" type="moving" x="1792" y="1664">
+   <polyline points="0,0 248.584,0.40382"/>
+  </object>
+  <object id="379" type="moving" x="1642.67" y="490.667">
+   <polyline points="149.333,149.333 149.333,597.333 -298.667,597.333 -298.667,149.333 149.333,149.333"/>
+  </object>
+  <object id="382" type="bystander" x="512" y="1280">
+   <polyline points="128,128 192,128"/>
+  </object>
+  <object id="386" type="moving" x="938.667" y="1258.67">
+   <polyline points="149.333,149.333 149.333,597.333 -298.667,597.333 -298.667,149.333 149.333,149.333"/>
+  </object>
+  <object id="389" type="moving" x="1664" y="1792">
+   <polyline points="0,0 2.48584,256"/>
+  </object>
+  <object id="391" type="moving" x="1536" y="2048">
+   <polyline points="0,0 0,-256"/>
+  </object>
+  <object id="412" type="moving" x="832" y="1856">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="2"/>
+   </properties>
+   <polyline points="0,0 640,0 640,192 -192,192 -192,0 0,0"/>
+  </object>
+  <object id="413" type="moving" x="1280" y="2048">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="2"/>
+   </properties>
+   <polyline points="0,0 -640,0 -640,-192 192,-192 192,0 0,0"/>
+  </object>
+  <object id="414" type="moving" x="1472" y="1856">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="2"/>
+   </properties>
+   <polyline points="0,0 -832,0 -832,192 0,192 0,0"/>
+  </object>
+  <object id="415" type="moving" x="640" y="2048">
+   <properties>
+    <property name="hidden" value=""/>
+    <property name="triggerId" value="2"/>
+   </properties>
+   <polyline points="0,0 0,-192 832,-192 832,0 0,0"/>
+  </object>
+  <object id="418" type="bystander" x="832" y="1984">
+   <polyline points="0,0 -64,0"/>
+  </object>
+  <object id="419" type="bystander" x="1114.44" y="1917.5">
+   <polyline points="0,0 -64,0"/>
+  </object>
+  <object id="420" type="bystander" x="1408" y="1984">
+   <polyline points="0,0 -64,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="other">
+  <object id="44" name="spawn" x="1216" y="1152" width="64" height="64"/>
+  <object id="45" name="win" type="capture_win_sensor" x="1792" y="1792" width="256" height="256"/>
+  <object id="98" name="checkpoint" type="win_sensor" x="640" y="640" width="256" height="256"/>
+  <object id="143" type="trigger" x="1024" y="1216" width="128" height="64">
+   <properties>
+    <property name="triggerId" value="0"/>
+   </properties>
+  </object>
+  <object id="160" type="trigger" x="704" y="1216" width="256" height="256">
+   <properties>
+    <property name="triggerId" value="1"/>
+   </properties>
+  </object>
+  <object id="399" name="checkpoint" type="win_sensor" x="1818.68" y="988.7" width="256" height="256"/>
+  <object id="400" type="trigger" x="1813.65" y="993.73" width="256" height="256">
+   <properties>
+    <property name="triggerId" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

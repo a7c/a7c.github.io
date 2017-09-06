@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300italic,700italic,300,700);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 
+
 body {
     -webkit-animation-delay: 0.1s;
     -webkit-animation-name: fontfix;
@@ -39,6 +40,7 @@ p, ul, table, pre, dl {
 margin:0 0 20px;
 font-family: "Merriweather Sans", sans-serif;
 margin-left: 250px;
+max-width: 900px;
 }
 
 
@@ -111,7 +113,7 @@ span.caption {
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
-  font-size:20px;
+  font-size:14px;
 }
 
 pre {
