@@ -11,7 +11,6 @@ markdown = """
 
 <div class="item" style="float: left" align="left" width=200px>
   <img  style=" margin-right: 2em" src="headshot.jpg" width=200px/>
-  <span class="caption"><a href="./alan_cheng_resume.pdf">Resume</a></span>
   <span>ayc48 [at] cornell.edu</span>
 </div>
 
