@@ -1,0 +1,19 @@
+rescript = 1
+g_finger := /Users/alan/projects/a7c.github.io/node_modules/@rescript/react/lib/ocaml/install.stamp
+cleaner = /Users/alan/projects/a7c.github.io/node_modules/gentype/gentype.exe
+rule astj
+  command = /Users/alan/projects/a7c.github.io/node_modules/bs-platform/darwin/bsc.exe  -bs-v 9.0.2 -bs-jsx 3 -bs-super-errors -absname -bs-ast -o $out $i
+o src/App.ast : astj ../../src/App.res
+rule deps
+  command = /Users/alan/projects/a7c.github.io/node_modules/bs-platform/darwin/bsb_helper.exe -hash 3222f42abd73215b0bf5b80a2900245f -bs-ns A7cgithubio $in
+  restat = 1
+o src/App.d : deps src/App.ast
+rule mij
+  command = /Users/alan/projects/a7c.github.io/node_modules/bs-platform/darwin/bsc.exe -bs-ns A7cgithubio -I . -I src -I /Users/alan/projects/a7c.github.io/node_modules/@rescript/react/lib/ocaml -bs-super-errors  -bs-gentype /Users/alan/projects/a7c.github.io/node_modules/gentype/gentype.exe -bs-package-name a7c.github.io -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/App-A7cgithubio.cmj src/App-A7cgithubio.cmi ../../src/App.bs.js : mij src/App.ast
+rule build_package
+  command = /Users/alan/projects/a7c.github.io/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
+  restat = 1
+o A7cgithubio.cmi : build_package A7cgithubio.mlmap

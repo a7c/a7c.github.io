@@ -1,0 +1,1 @@
+{ "dirs" : [ "src" ] , "pkgs" : [ [ "gentype" , "/Users/alan/projects/a7c.github.io/node_modules/gentype" ] , [ "@rescript/react" , "/Users/alan/projects/a7c.github.io/node_modules/@rescript/react" ] ] , "generated" : [] }
