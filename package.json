@@ -1,5 +1,6 @@
 {
-  "name": "a7c",
+  "name": "a7c.github.io",
+  "homepage": "http://a7c.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "start:res": "bsb -make-world -w"
   },
   "eslintConfig": {
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "bs-platform": "^9.0.2",
-    "gentype": "^4.1.0"
+    "gentype": "^4.1.0",
+    "gh-pages": "^3.2.0"
   }
 }

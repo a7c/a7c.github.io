@@ -10,7 +10,7 @@ function App(Props) {
               className: "App"
             }, React.createElement("header", {
                   className: "App-header"
-                }, React.createElement("h1", undefined, "Alan Cheng"), React.createElement("p", undefined, "(This website is under construction!)"), React.createElement("h3", undefined, "Hello! I'm a first-year PhD student in the Computer Science Department at Stanford University."), React.createElement("p", undefined, "I'm interested in exploring new ways to make learning more effective, engaging, and enjoyable through technology. ", "My research lies at the intersection of human-computer interaction, education, and game design.")));
+                }, React.createElement("h1", undefined, "Alan Cheng"), React.createElement("p", undefined, "(This website is under construction!)"), React.createElement("h3", undefined, "Hello! I'm a third-year PhD student in the Computer Science Department at Stanford University."), React.createElement("p", undefined, "I'm interested in exploring new ways to make learning more effective, engaging, and enjoyable through technology. ", "My research lies at the intersection of human-computer interaction, education, and game design.")));
 }
 
 var make = App;
