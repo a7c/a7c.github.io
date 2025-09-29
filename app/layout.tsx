@@ -12,10 +12,8 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  title: "Alan Cheng - Academic Portfolio",
-  description:
-    "PhD in Education seeking teaching-focused faculty positions. Specializing in curriculum development and educational technology.",
-  generator: "v0.app",
+  title: "Alan Cheng",
+  generator: "Next.js",
 }
 
 export default function RootLayout({
