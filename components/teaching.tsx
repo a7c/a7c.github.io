@@ -10,7 +10,7 @@ const courses = [
   {
     title: "Cross-Platform Mobile Development",
     code: "CS 147L",
-    enrollment: "125-160 students",
+    enrollment: "125-160 students", 
     semester: ["Autumn 2023", "Autumn 2024", "Autumn 2025"],
     description:
       "Programming course for undergraduate and graduate students covering the foundations of cross-platform mobile development in React Native.",
