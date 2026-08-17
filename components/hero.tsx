@@ -20,7 +20,7 @@ export function Hero() {
 
         <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
         <div className="order-2 space-y-7 text-center animate-fade-in lg:order-1 lg:text-left">
-          <h1 className="text-balance text-5xl font-black leading-[0.95] tracking-tight text-foreground sm:text-7xl lg:text-8xl">
+          <h1 className="text-balance text-6xl font-black leading-[0.95] tracking-tight text-foreground">
             Hi, I'm <span className="text-primary">Alan Cheng</span>
             <span className="text-primary">!</span>
           </h1>
