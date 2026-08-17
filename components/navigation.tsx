@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Sparkles } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 const navItems = [
   { name: "About", href: "#hero" },
@@ -40,9 +40,6 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center gap-2">
-            {/* <div className="p-1.5 bg-primary/10 rounded-full">
-              <Sparkles className="h-4 w-4 text-primary" />
-            </div> */}
             <h1 className="text-xl font-semibold text-foreground">Alan Cheng</h1>
           </div>
 

@@ -1,6 +1,17 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { FileText, ExternalLink } from "lucide-react"
+import { ExternalLink } from "lucide-react"
+
+function renderAuthors(authors: string) {
+  const parts = authors.split(/(Alan Y\. Cheng\*?|Alan Cheng)/g)
+  return parts.map((part, i) =>
+    /^Alan (Y\. )?Cheng\*?$/.test(part) ? (
+      <span key={i} className="font-semibold text-primary">
+        {part}
+      </span>
+    ) : (
+      <span key={i}>{part}</span>
+    ),
+  )
+}
 
 const publications = [
   {
@@ -38,49 +49,49 @@ const publications = [
 export function Research() {
   return (
     <section id="research" className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12 animate-slide-up">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-6 animate-slide-up">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
             Research & <span className="text-primary">Publications</span>
           </h2>
         </div>
 
-        <div className="space-y-12">
-          <div className="animate-slide-up">
-            <div className="grid gap-4">
-              {publications.map((pub, index) => (
-                <Card key={index} className="border-border bg-card hover-lift group">
-                  <CardContent className="ph-6">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                      <div className="flex-1">
-                        {pub.link ? (
-                          <a 
-                            href={pub.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="font-semibold text-foreground mb-2 text-pretty group-hover:text-primary transition-colors hover:underline block"
-                          >
-                            {pub.title}
-                          </a>
-                        ) : (
-                          <h4 className="font-semibold text-foreground mb-2 text-pretty group-hover:text-primary transition-colors">
-                            {pub.title}
-                          </h4>
-                        )}
-                        <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
-                          <span className="font-medium">{pub.authors}</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-foreground text-sm mb-3 text">
-                          <span className="font-medium">{pub.journal}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
+        <ol className="animate-slide-up">
+          {publications.map((pub, index) => (
+            <li
+              key={index}
+              className="group grid grid-cols-1 gap-2 border-border/60 py-8 [&:not(:first-child)]:border-t sm:grid-cols-[7rem_1fr] sm:gap-8"
+            >
+              <div className="pt-0.5">
+                <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+                  {pub.journal}
+                </span>
+              </div>
+
+              <div>
+                {pub.link ? (
+                  <a
+                    href={pub.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-start gap-1.5 text-lg font-semibold leading-snug text-foreground text-pretty transition-colors hover:text-primary"
+                  >
+                    <span>{pub.title}</span>
+                    <ExternalLink className="mt-1 h-4 w-4 flex-shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
+                  </a>
+                ) : (
+                  <h3 className="text-lg font-semibold leading-snug text-foreground text-pretty">
+                    {pub.title}
+                  </h3>
+                )}
+
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {renderAuthors(pub.authors)}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   )
